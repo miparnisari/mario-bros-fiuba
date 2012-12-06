@@ -1,0 +1,248 @@
+juego:
+    pantalla:
+        ancho: 800
+        alto: 600
+    musica:
+        -   file: sounds/DBZ.mp3
+            tag: DBZ
+    sonidos:
+        -   file: sounds/Salto.wav
+            tag: Salto
+    parametros:
+        vel_personaje: 15
+        margen_scroll: 270
+    tiposPersonaje:     
+        princesa:
+            ancho: 57
+            alto: 99
+            sprites: images/elaineTiraPeq.png
+            animaciones:
+                -   nombre: quietoder
+                    offset: 0
+                    cantidad: 1
+                    periodo: 2
+                -   nombre: quietoizq
+                    offset: 1
+                    cantidad: 1
+                    periodo: 2
+                -   nombre: derecha
+                    offset: 8
+                    cantidad: 6
+                    periodo: 2
+                -   nombre: izquierda
+                    offset: 2
+                    cantidad: 6
+                    periodo: 5
+                -   nombre: saltandoizq
+                    offset: 5
+                    cantidad: 1
+                    periodo: 0
+                -   nombre: saltandoder
+                    offset: 10
+                    cantidad: 1
+                    periodo: 0
+                -   nombre: cayendoizq
+                    offset: 2
+                    cantidad: 1
+                    periodo: 0
+                -   nombre: cayendoder
+                    offset: 13
+                    cantidad: 1
+                    periodo: 0
+        mono:
+            ancho: 113
+            alto: 100
+            sprites: images/monTiraPeq.png
+            animaciones:
+                -   nombre: quietoder
+                    offset: 0
+                    cantidad: 1
+                    periodo: 3
+                -   nombre: quietoizq
+                    offset: 0
+                    cantidad: 1
+                    periodo: 3
+                -   nombre: derecha
+                    offset: 1
+                    cantidad: 9
+                    periodo: 3
+                -   nombre: izquierda
+                    offset: 10
+                    cantidad: 6
+                    periodo: 3
+                -   nombre: saltando
+                    offset: 1
+                    cantidad: 9
+                    periodo: 3
+                -   nombre: cayendo
+                    offset: 10
+                    cantidad: 6
+                    periodo: 3
+    tiposProtagonista:
+        mario:
+            ancho: 40
+            alto: 43
+            sprites: images/mario_sprites.png
+            animaciones:
+                -   nombre: quietoder
+                    offset: 0
+                    cantidad: 1
+                    periodo: 0
+                -   nombre: quietoizq
+                    offset: 1
+                    cantidad: 1
+                    periodo: 0
+                -   nombre: derecha
+                    offset: 2
+                    cantidad: 4
+                    periodo: 0
+                -   nombre: izquierda
+                    offset: 6
+                    cantidad: 4
+                    periodo: 0
+                -   nombre: saltandoizq
+                    offset: 16
+                    cantidad: 1
+                    periodo: 4
+                -   nombre: saltandoder
+                    offset: 11
+                    cantidad: 1
+                    periodo: 4
+                -   nombre: cayendoizq
+                    offset: 19
+                    cantidad: 1
+                    periodo: 0
+                -   nombre: cayendoder
+                    offset: 14
+                    cantidad: 1
+                    periodo: 0
+        protagonista:
+            ancho: 70
+            alto: 101
+            sprites: images/guybrushTiraPeq.png
+            animaciones:
+                -   nombre: quietoder
+                    offset: 0
+                    cantidad: 1
+                    periodo: 5
+                -   nombre: quietoizq
+                    offset: 1
+                    cantidad: 1
+                    periodo: 5
+                -   nombre: derecha
+                    offset: 8
+                    cantidad: 6
+                    periodo: 5
+                -   nombre: izquierda
+                    offset: 1
+                    cantidad: 6
+                    periodo: 5
+                -   nombre: saltandoizq
+                    offset: 4
+                    cantidad: 1
+                    periodo: 0
+                -   nombre: saltandoder
+                    offset: 10
+                    cantidad: 1
+                    periodo: 0
+                -   nombre: cayendoizq
+                    offset: 3
+                    cantidad: 1
+                    periodo: 0
+                -   nombre: cayendoder
+                    offset: 12
+                    cantidad: 1
+                    periodo: 0
+        hongo:
+            ancho: 30
+            alto: 30
+            sprites: images/hongo2.png
+            animaciones:
+                -   nombre: quietoder
+                    offset: 0
+                    cantidad: 1
+                    periodo: 0
+        barril:
+            ancho: 40
+            alto: 30
+            sprites: images/barrilesChicos.png
+            animaciones:
+                -   nombre: quietoder
+                    offset: 0
+                    cantidad: 4
+                    periodo: 1
+    texturas:
+            -   textura: viga
+                file: images/metal.png
+            -   textura: madera
+                file: images/madera.png
+            -   textura: canio
+                file: images/canio.png
+            -   textura: camaElastica
+                file: images/camaElastica.png
+    nivel:
+        ancho: 1200
+        alto: 800
+        piso: 750
+        fondo: images/background.png
+        personajes:
+            -   tipo: princesa
+                x: 300
+                y: 657
+            -   tipo: mono
+                x: 780
+                y: 655
+        protagonistas:
+            -   tipo: mario
+                x: 100
+                y: 710
+                vel_personaje: 10
+                margen_scroll: 270
+                potencia_salto: 6
+            -   tipo: protagonista
+                x: 650
+                y: 655
+                vel_personaje: 10
+                margen_scroll: 270
+                potencia_salto: 6
+        enemigos:
+            -   tipo: hongo
+                vel_enemigo: 15    
+        plataformas:
+            -   textura: viga
+                x: 50
+                y: 700
+                ancho: 200
+                alto: 25
+                rozamiento: 0.9995
+            -   textura: viga
+                x: 500
+                y: 300
+                ancho: 200
+                alto: 25
+                rozamiento: 0
+            -   textura: viga
+                x: 900
+                y: 300
+                ancho: 200
+                alto: 25
+                rozamiento: 0
+        escaleras:
+            -   textura: madera
+                x: 900
+                y: 290
+                ancho: 150
+                alto: 480         
+        canierias:
+            -   textura: canio
+                x: 480
+                y: 110
+                ancho: 70
+                alto: 70
+        trampolines:
+            -   textura: camaElastica
+                x: 600
+                y: 720
+                ancho: 200
+                alto: 50
+                rozamiento: 5

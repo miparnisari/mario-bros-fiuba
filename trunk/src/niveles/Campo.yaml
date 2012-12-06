@@ -1,0 +1,379 @@
+juego:
+    pantalla:
+        ancho: 800
+        alto: 600
+    musica:
+        -   file: sounds/DBZ.mp3
+            tag: DBZ
+    sonidos:
+        -   file: sounds/Salto.wav
+            tag: Salto
+        -   file: sounds/Armadura.wav
+            tag: Armadura
+    parametros:
+        vel_personaje: 15
+        margen_scroll: 270
+    tiposPersonaje:
+        protagonista:
+            ancho: 104
+            alto: 150
+            sprites: images/guybrushTira.png
+            animaciones:
+                -   nombre: quietoder
+                    offset: 0
+                    cantidad: 1
+                    periodo: 5
+                -   nombre: quietoizq
+                    offset: 1
+                    cantidad: 1
+                    periodo: 5
+                -   nombre: derecha
+                    offset: 8
+                    cantidad: 6
+                    periodo: 5
+                -   nombre: izquierda
+                    offset: 1
+                    cantidad: 6
+                    periodo: 5
+                -   nombre: saltandoizq
+                    offset: 4
+                    cantidad: 1
+                    periodo: 0
+                -   nombre: saltandoder
+                    offset: 10
+                    cantidad: 1
+                    periodo: 0
+                -   nombre: cayendoizq
+                    offset: 3
+                    cantidad: 1
+                    periodo: 0
+                -   nombre: cayendoder
+                    offset: 12
+                    cantidad: 1
+                    periodo: 0    
+        mono:
+            ancho: 130
+            alto: 115
+            sprites: images/monTira.png
+            animaciones:
+                -   nombre: quietoder
+                    offset: 0
+                    cantidad: 1
+                    periodo: 10
+                -   nombre: quietoizq
+                    offset: 0
+                    cantidad: 1
+                    periodo: 10
+                -   nombre: comer
+                    offset: 1
+                    cantidad: 9
+                    periodo: 10
+                -   nombre: baile
+                    offset: 10
+                    cantidad: 6
+                    periodo: 10
+                -   nombre: saltandoizq
+                    offset: 4
+                    cantidad: 1
+                    periodo: 0
+                -   nombre: saltandoder
+                    offset: 4
+                    cantidad: 1
+                    periodo: 0
+                -   nombre: cayendoizq
+                    offset: 3
+                    cantidad: 1
+                    periodo: 0
+                -   nombre: cayendoder
+                    offset: 3
+                    cantidad: 1
+                    periodo: 0
+        princesa:
+            ancho: 86
+            alto: 150
+            sprites: images/elaineTira.png
+            animaciones:
+                -   nombre: quietoder
+                    offset: 0
+                    cantidad: 1
+                    periodo: 2
+                -   nombre: quietoizq
+                    offset: 1
+                    cantidad: 1
+                    periodo: 2
+                -   nombre: derecha
+                    offset: 8
+                    cantidad: 6
+                    periodo: 2
+                -   nombre: izquierda
+                    offset: 2
+                    cantidad: 6
+                    periodo: 5
+                -   nombre: saltandoizq
+                    offset: 5
+                    cantidad: 1
+                    periodo: 0
+                -   nombre: saltandoder
+                    offset: 10
+                    cantidad: 1
+                    periodo: 0
+                -   nombre: cayendoizq
+                    offset: 2
+                    cantidad: 1
+                    periodo: 0
+                -   nombre: cayendoder
+                    offset: 13
+                    cantidad: 1
+                    periodo: 0
+        pluma:
+            ancho: 40
+            alto: 60
+            sprites: images/pluma.png
+            animaciones:
+                -   nombre: quietoder
+                    offset: 0
+                    cantidad: 1
+                    periodo: 0
+        armor:
+            ancho: 40
+            alto: 60
+            sprites: images/armor.png
+            animaciones:
+                -   nombre: quietoder
+                    offset: 0
+                    cantidad: 1
+                    periodo: 0
+    tiposProtagonista:
+        protagonista:
+            ancho: 104
+            alto: 150
+            sprites: images/guybrushTira.png
+            animaciones:
+                -   nombre: quietoder
+                    offset: 0
+                    cantidad: 1
+                    periodo: 5
+                -   nombre: quietoizq
+                    offset: 1
+                    cantidad: 1
+                    periodo: 5
+                -   nombre: derecha
+                    offset: 8
+                    cantidad: 6
+                    periodo: 5
+                -   nombre: izquierda
+                    offset: 1
+                    cantidad: 6
+                    periodo: 5
+                -   nombre: saltandoizq
+                    offset: 4
+                    cantidad: 1
+                    periodo: 0
+                -   nombre: saltandoder
+                    offset: 10
+                    cantidad: 1
+                    periodo: 0
+                -   nombre: cayendoizq
+                    offset: 3
+                    cantidad: 1
+                    periodo: 0
+                -   nombre: cayendoder
+                    offset: 12
+                    cantidad: 1
+                    periodo: 0   
+        mono:
+            ancho: 130
+            alto: 115
+            sprites: images/monTira.png
+            animaciones:
+                -   nombre: quietoder
+                    offset: 0
+                    cantidad: 1
+                    periodo: 10
+                -   nombre: quietoizq
+                    offset: 0
+                    cantidad: 1
+                    periodo: 10
+                -   nombre: derecha
+                    offset: 1
+                    cantidad: 9
+                    periodo: 3
+                -   nombre: izquierda
+                    offset: 10
+                    cantidad: 6
+                    periodo: 3
+                -   nombre: saltandoizq
+                    offset: 4
+                    cantidad: 1
+                    periodo: 0
+                -   nombre: saltandoder
+                    offset: 4
+                    cantidad: 1
+                    periodo: 0
+                -   nombre: cayendoizq
+                    offset: 3
+                    cantidad: 1
+                    periodo: 0
+                -   nombre: cayendoder
+                    offset: 3
+                    cantidad: 1
+                    periodo: 0
+        princesa:
+            ancho: 86
+            alto: 150
+            sprites: images/elaineTira.png
+            animaciones:
+                -   nombre: quietoder
+                    offset: 0
+                    cantidad: 1
+                    periodo: 2
+                -   nombre: quietoizq
+                    offset: 1
+                    cantidad: 1
+                    periodo: 2
+                -   nombre: derecha
+                    offset: 8
+                    cantidad: 6
+                    periodo: 2
+                -   nombre: izquierda
+                    offset: 2
+                    cantidad: 6
+                    periodo: 5
+                -   nombre: saltandoizq
+                    offset: 5
+                    cantidad: 1
+                    periodo: 0
+                -   nombre: saltandoder
+                    offset: 10
+                    cantidad: 1
+                    periodo: 0
+                -   nombre: cayendoizq
+                    offset: 2
+                    cantidad: 1
+                    periodo: 0
+                -   nombre: cayendoder
+                    offset: 13
+                    cantidad: 1
+                    periodo: 0
+        hongo:
+            ancho: 30
+            alto: 30
+            sprites: images/hongo2.png
+            animaciones:
+                -   nombre: quietoder
+                    offset: 0
+                    cantidad: 1
+                    periodo: 0
+        barril:
+            ancho: 80
+            alto: 60
+            sprites: images/barrilesChicos.png
+            animaciones:
+                -   nombre: quietoder
+                    offset: 0
+                    cantidad: 4
+                    periodo: 1
+        pluma:
+            ancho: 40
+            alto: 60
+            sprites: images/pluma.png
+            animaciones:
+                -   nombre: quietoder
+                    offset: 0
+                    cantidad: 1
+                    periodo: 0
+        Armadura:
+            ancho: 100
+            alto: 100
+            sprites: images/Armadura.png
+            animaciones:
+                -   nombre: quietoder
+                    offset: 0
+                    cantidad: 1
+                    periodo: 0
+    texturas:
+            -   textura: viga
+                file: images/metal.png
+            -   textura: madera
+                file: images/madera.png
+            -   textura: canio
+                file: images/canio.png
+    nivel:
+        ancho: 1300
+        alto: 800
+        piso: 750
+        fondo: images/background.png
+        personajes:
+            -   tipo: protagonista
+                x: 820
+                y: 620
+            -   tipo: mono
+                x: 75
+                y: 640
+            -   tipo: princesa
+                x: 100
+                y: 155
+            -   tipo: pluma
+                x: 200
+                y: 100
+        protagonistas:
+            -   tipo: protagonista
+                x: 300
+                vel_personaje: 15
+                margen_scroll: 270
+                potencia_salto: 6
+            -   tipo: mono
+                x: 600
+                vel_personaje: 15
+                margen_scroll: 270
+                potencia_salto: 6
+        enemigos:
+            -   tipo: hongo
+                vel_enemigo: 15
+            -   tipo: barril
+                vel_enemigo: 15
+            -   tipo: pluma
+                vel_enemigo: 15
+            -   tipo: Armadura
+                vel_enemigo: 15   
+        plataformas:
+            -   textura: viga
+                x: 780
+                y: 590
+                ancho: 300
+                alto: 20
+                rozamiento: 0.9995
+            -   textura: viga
+                x: 50
+                y: 590
+                ancho: 200
+                alto: 20
+                rozamiento: 0.9995
+            -   textura: viga
+                x: 50
+                y: 290
+                ancho: 200
+                alto: 20
+                rozamiento: 0
+        escaleras:
+            -   textura: madera
+                x: 780
+                y: 610
+                ancho: 150
+                alto: 150
+            -   textura: madera
+                x: 60
+                y: 380
+                ancho: 150
+                alto: 220
+            -   textura: madera
+                x: 400
+                y: 400
+                ancho: 150
+                alto: 350    
+        canierias:
+            -   textura: canio
+                x: 780
+                y: 530
+                ancho: 70
+                alto: 70

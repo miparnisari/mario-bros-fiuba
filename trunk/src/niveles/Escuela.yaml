@@ -1,0 +1,346 @@
+juego:
+    pantalla:
+        ancho: 800
+        alto: 600
+    musica:
+        -   file: sounds/DBZ.mp3
+            tag: DBZ
+    sonidos:
+        -   file: sounds/Salto.mp3
+            tag: Salto
+    parametros:
+        vel_personaje: 15
+        margen_scroll: 270
+    tiposPersonaje:
+        peach:
+            ancho: 35
+            alto: 70
+            sprites: images/peach.png
+            animaciones: 
+                -   nombre: quieto
+                    offset: 0
+                    cantidad: 1
+                    periodo: 6
+                -   nombre: atras
+                    offset: 1
+                    cantidad: 1
+                    periodo: 6
+                -   nombre: grito
+                    offset: 2
+                    cantidad: 4
+                    periodo: 10
+                -   nombre: izquierda
+                    offset: 6
+                    cantidad: 8
+                    periodo: 6
+                -   nombre: derecha
+                    offset: 14
+                    cantidad: 8
+                    periodo: 6
+        protagonista:
+            ancho: 104
+            alto: 150
+            sprites: images/guybrushTira.png
+            animaciones:
+                -   nombre: quietoder
+                    offset: 0
+                    cantidad: 1
+                    periodo: 5
+                -   nombre: quietoizq
+                    offset: 1
+                    cantidad: 1
+                    periodo: 5
+                -   nombre: derecha
+                    offset: 8
+                    cantidad: 6
+                    periodo: 5
+                -   nombre: izquierda
+                    offset: 1
+                    cantidad: 6
+                    periodo: 5
+                -   nombre: saltandoizq
+                    offset: 4
+                    cantidad: 1
+                    periodo: 0
+                -   nombre: saltandoder
+                    offset: 10
+                    cantidad: 1
+                    periodo: 0
+                -   nombre: cayendoizq
+                    offset: 3
+                    cantidad: 1
+                    periodo: 0
+                -   nombre: cayendoder
+                    offset: 12
+                    cantidad: 1
+                    periodo: 0
+        mono:
+            ancho: 130
+            alto: 115
+            sprites: images/monTira.png
+            animaciones:
+                -   nombre: quietoder
+                    offset: 0
+                    cantidad: 1
+                    periodo: 10
+                -   nombre: quietoizq
+                    offset: 0
+                    cantidad: 1
+                    periodo: 10
+                -   nombre: comer
+                    offset: 1
+                    cantidad: 9
+                    periodo: 10
+                -   nombre: baile
+                    offset: 10
+                    cantidad: 6
+                    periodo: 10
+                -   nombre: saltandoizq
+                    offset: 4
+                    cantidad: 1
+                    periodo: 0
+                -   nombre: saltandoder
+                    offset: 4
+                    cantidad: 1
+                    periodo: 0
+                -   nombre: cayendoizq
+                    offset: 3
+                    cantidad: 1
+                    periodo: 0
+                -   nombre: cayendoder
+                    offset: 3
+                    cantidad: 1
+                    periodo: 0
+        princesa:
+            ancho: 86
+            alto: 150
+            sprites: images/elaineTira.png
+            animaciones:
+                -   nombre: quietoder
+                    offset: 0
+                    cantidad: 1
+                    periodo: 2
+                -   nombre: quietoizq
+                    offset: 1
+                    cantidad: 1
+                    periodo: 2
+                -   nombre: derecha
+                    offset: 8
+                    cantidad: 6
+                    periodo: 2
+                -   nombre: izquierda
+                    offset: 2
+                    cantidad: 6
+                    periodo: 5
+                -   nombre: saltandoizq
+                    offset: 5
+                    cantidad: 1
+                    periodo: 0
+                -   nombre: saltandoder
+                    offset: 10
+                    cantidad: 1
+                    periodo: 0
+                -   nombre: cayendoizq
+                    offset: 2
+                    cantidad: 1
+                    periodo: 0
+                -   nombre: cayendoder
+                    offset: 13
+                    cantidad: 1
+                    periodo: 0
+
+    tiposProtagonista:
+        mario:
+            ancho: 42
+            alto: 70
+            sprites: images/mario_sprites.png
+            animaciones:
+                -   nombre: quietoder
+                    offset: 0
+                    cantidad: 1
+                    periodo: 0
+                -   nombre: quietoizq
+                    offset: 1
+                    cantidad: 1
+                    periodo: 0
+                -   nombre: derecha
+                    offset: 2
+                    cantidad: 4
+                    periodo: 0
+                -   nombre: izquierda
+                    offset: 6
+                    cantidad: 4
+                    periodo: 0
+                -   nombre: saltandoizq
+                    offset: 16
+                    cantidad: 1
+                    periodo: 4
+                -   nombre: saltandoder
+                    offset: 11
+                    cantidad: 1
+                    periodo: 4
+                -   nombre: cayendoizq
+                    offset: 19
+                    cantidad: 1
+                    periodo: 0
+                -   nombre: cayendoder
+                    offset: 14
+                    cantidad: 1
+                    periodo: 0
+        protagonista:
+            ancho: 104
+            alto: 150
+            sprites: images/guybrushTira.png
+            animaciones:
+                -   nombre: quietoder
+                    offset: 0
+                    cantidad: 1
+                    periodo: 5
+                -   nombre: quietoizq
+                    offset: 1
+                    cantidad: 1
+                    periodo: 5
+                -   nombre: derecha
+                    offset: 8
+                    cantidad: 6
+                    periodo: 5
+                -   nombre: izquierda
+                    offset: 1
+                    cantidad: 6
+                    periodo: 5
+                -   nombre: saltandoizq
+                    offset: 4
+                    cantidad: 1
+                    periodo: 0
+                -   nombre: saltandoder
+                    offset: 10
+                    cantidad: 1
+                    periodo: 0
+                -   nombre: cayendoizq
+                    offset: 3
+                    cantidad: 1
+                    periodo: 0
+                -   nombre: cayendoder
+                    offset: 12
+                    cantidad: 1
+                    periodo: 0
+        mono:
+            ancho: 130
+            alto: 115
+            sprites: images/monTira.png
+            animaciones:
+                -   nombre: quietoder
+                    offset: 0
+                    cantidad: 1
+                    periodo: 3
+                -   nombre: quietoizq
+                    offset: 0
+                    cantidad: 1
+                    periodo: 3
+                -   nombre: derecha
+                    offset: 1
+                    cantidad: 9
+                    periodo: 3
+                -   nombre: izquierda
+                    offset: 10
+                    cantidad: 6
+                    periodo: 3
+                -   nombre: saltando
+                    offset: 1
+                    cantidad: 9
+                    periodo: 3
+                -   nombre: cayendo
+                    offset: 10
+                    cantidad: 6
+                    periodo: 3
+        princesa:
+            ancho: 86
+            alto: 150
+            sprites: images/elaineTira.png
+            animaciones:
+                -   nombre: quietoder
+                    offset: 0
+                    cantidad: 1
+                    periodo: 2
+                -   nombre: quietoizq
+                    offset: 1
+                    cantidad: 1
+                    periodo: 2
+                -   nombre: derecha
+                    offset: 8
+                    cantidad: 6
+                    periodo: 2
+                -   nombre: izquierda
+                    offset: 2
+                    cantidad: 6
+                    periodo: 5
+                -   nombre: saltandoizq
+                    offset: 5
+                    cantidad: 1
+                    periodo: 0
+                -   nombre: saltandoder
+                    offset: 10
+                    cantidad: 1
+                    periodo: 0
+                -   nombre: cayendoizq
+                    offset: 2
+                    cantidad: 1
+                    periodo: 0
+                -   nombre: cayendoder
+                    offset: 13
+                    cantidad: 1
+                    periodo: 0
+    texturas:
+            -   textura: viga
+                file: images/metal.png
+            -   textura: madera
+                file: images/madera.png
+    nivel:
+        ancho: 1100
+        alto: 800
+        fondo: images/fondo.png
+        personajes:
+            -   tipo: protagonista
+                x: 300
+                y: 504
+            -   tipo: mono
+                x: 800
+                y: 530
+            -   tipo: princesa
+                x: 400
+                y: 515
+            -   tipo: peach
+                x: 200
+                y: 600
+        protagonistas:
+            -   tipo: protagonista
+                x: 650
+                y: 230
+                vel_personaje: 10
+                margen_scroll: 270
+                potencia_salto: 6
+            -   tipo: mario
+                x: 600
+                y: 600
+                vel_personaje: 10
+                margen_scroll: 250
+                potencia_salto: 8
+        plataformas:
+            -   textura: viga
+                x: 100
+                y: 100
+                ancho: 100
+                alto: 50
+            -   textura: viga
+                x: 200
+                y: 400
+                ancho: 800
+                alto: 20
+        escaleras:
+            -   textura: madera
+                x: 450
+                y: 400
+                ancho: 80
+                alto: 248
+
+
