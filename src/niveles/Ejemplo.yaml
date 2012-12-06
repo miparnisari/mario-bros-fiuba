@@ -1,0 +1,541 @@
+juego:
+    pantalla:
+        ancho: 800
+        alto: 600
+    musica:
+        -   file: sounds/DBZ.mp3
+            tag: DBZ
+    sonidos:
+        -   file: sounds/Salto.wav
+            tag: Salto
+        -   file: sounds/Armadura.wav
+            tag: Armadura
+        -   file: sounds/Toasty.wav
+            tag: Toasty
+        -   file: sounds/Yah.wav
+            tag: Yah
+        -   file: sounds/Ganar.wav
+            tag: ganar
+        -   file: sounds/Perder.wav
+            tag: perder
+        -   file: sounds/1UP.wav
+            tag: 1UP
+        -   file: sounds/HereWeGo.wav
+            tag: HereWeGo
+        -   file: sounds/Cama.wav
+            tag: Cama
+        -   file: sounds/Pluma.wav
+            tag: Pluma
+        -   file: sounds/CajaBonus.wav
+            tag: CajaBonus
+    parametros:
+        vel_personaje: 15
+        margen_scroll: 270
+    tiposPersonaje:     
+        princesa:
+            ancho: 30
+            alto: 54
+            sprites: images/peach.png
+            animaciones: 
+                -   nombre: quietoder
+                    offset: 0
+                    cantidad: 1
+                    periodo: 6
+                -   nombre: atras
+                    offset: 1
+                    cantidad: 1
+                    periodo: 6
+                -   nombre: grito
+                    offset: 2
+                    cantidad: 4
+                    periodo: 10
+                -   nombre: izquierda
+                    offset: 6
+                    cantidad: 8
+                    periodo: 6
+                -   nombre: derecha
+                    offset: 14
+                    cantidad: 8
+                    periodo: 6
+        vida:
+            ancho: 24
+            alto: 48
+            sprites: images/numbers.png
+            animaciones: 
+                -   nombre: 0
+                    offset: 0
+                    cantidad: 1
+                    periodo: 0
+                -   nombre: 1
+                    offset: 1
+                    cantidad: 1
+                    periodo: 0
+                -   nombre: 2
+                    offset: 2
+                    cantidad: 1
+                    periodo: 0
+                -   nombre: 3
+                    offset: 3
+                    cantidad: 1
+                    periodo: 0
+                -   nombre: 4
+                    offset: 4
+                    cantidad: 1
+                    periodo: 0
+                -   nombre: 5
+                    offset: 5
+                    cantidad: 1
+                    periodo: 0
+                -   nombre: 6
+                    offset: 6
+                    cantidad: 1
+                    periodo: 0
+                -   nombre: 7
+                    offset: 7
+                    cantidad: 1
+                    periodo: 0
+                -   nombre: 8
+                    offset: 8
+                    cantidad: 1
+                    periodo: 0
+                -   nombre: 9
+                    offset: 9
+                    cantidad: 1
+                    periodo: 0
+        mono:
+            ancho: 70
+            alto: 70
+            sprites: images/mono2.png
+            animaciones:
+                -   nombre: quietoder
+                    offset: 0
+                    cantidad: 1
+                    periodo: 1
+                -   nombre: quietoizq
+                    offset: 1
+                    cantidad: 1
+                    periodo: 1
+                -   nombre: comer
+                    offset: 2
+                    cantidad: 2
+                    periodo: 1
+                -   nombre: baile
+                    offset: 4
+                    cantidad: 2
+                    periodo: 1
+                -   nombre: saltandoizq
+                    offset: 6
+                    cantidad: 3
+                    periodo: 1
+                -   nombre: saltandoder
+                    offset: 9
+                    cantidad: 3
+                    periodo: 1
+                -   nombre: cayendoizq
+                    offset: 11
+                    cantidad: 2
+                    periodo: 1
+                -   nombre: cayendoder
+                    offset: 13
+                    cantidad: 2
+                    periodo: 1
+        fuego:
+            ancho: 27
+            alto: 57
+            sprites: images/fuego.png
+            animaciones:
+                -   nombre: quietoder
+                    offset: 0
+                    cantidad: 5
+                    periodo: 0 
+    tiposProtagonista:
+        mario:
+            ancho: 40
+            alto: 51
+            sprites: images/SuperMarioTGrande.png
+            animaciones:
+                -   nombre: quietoder
+                    offset: 0
+                    cantidad: 33
+                    periodo: 0
+                -   nombre: quietoizq
+                    offset: 32
+                    cantidad: 33
+                    periodo: 0
+                -   nombre: derecha
+                    offset: 65
+                    cantidad: 25
+                    periodo: 0
+                -   nombre: izquierda
+                    offset: 90
+                    cantidad: 25
+                    periodo: 0
+                -   nombre: saltandoizq
+                    offset: 141
+                    cantidad: 26
+                    periodo: 3
+                -   nombre: saltandoder
+                    offset: 115
+                    cantidad: 26
+                    periodo: 3
+                -   nombre: cayendoizq
+                    offset: 149
+                    cantidad: 18
+                    periodo: 3
+                -   nombre: cayendoder
+                    offset: 123
+                    cantidad: 18
+                    periodo: 3
+        luigi:
+            ancho: 40
+            alto: 60
+            sprites: images/LuigiTGrande.png
+            animaciones:
+                -   nombre: quietoder
+                    offset: 0
+                    cantidad: 33
+                    periodo: 0
+                -   nombre: quietoizq
+                    offset: 32
+                    cantidad: 33
+                    periodo: 0
+                -   nombre: derecha
+                    offset: 65
+                    cantidad: 25
+                    periodo: 0
+                -   nombre: izquierda
+                    offset: 90
+                    cantidad: 25
+                    periodo: 0
+                -   nombre: saltandoizq
+                    offset: 141
+                    cantidad: 26
+                    periodo: 3
+                -   nombre: saltandoder
+                    offset: 115
+                    cantidad: 26
+                    periodo: 3
+                -   nombre: cayendoizq
+                    offset: 149
+                    cantidad: 18
+                    periodo: 3
+                -   nombre: cayendoder
+                    offset: 123
+                    cantidad: 18
+                    periodo: 3
+        mono:
+            ancho: 70
+            alto: 70
+            sprites: images/mono2.png
+            animaciones:
+                -   nombre: quietoder
+                    offset: 0
+                    cantidad: 1
+                    periodo: 1
+                -   nombre: quietoizq
+                    offset: 1
+                    cantidad: 1
+                    periodo: 1
+                -   nombre: izquierda
+                    offset: 2
+                    cantidad: 2
+                    periodo: 1
+                -   nombre: derecha
+                    offset: 4
+                    cantidad: 2
+                    periodo: 1
+                -   nombre: saltandoizq
+                    offset: 6
+                    cantidad: 3
+                    periodo: 1
+                -   nombre: saltandoder
+                    offset: 9
+                    cantidad: 3
+                    periodo: 1
+                -   nombre: cayendoizq
+                    offset: 11
+                    cantidad: 2
+                    periodo: 1
+                -   nombre: cayendoder
+                    offset: 13
+                    cantidad: 2
+                    periodo: 1
+        hongo:
+            ancho: 30
+            alto: 30
+            sprites: images/hongo.png
+            animaciones:
+                -   nombre: quietoder
+                    offset: 2
+                    cantidad: 1
+                    periodo: 0
+                -   nombre: muriendo
+                    offset: 0
+                    cantidad: 1
+                    periodo: 0
+                -   nombre: mareado
+                    offset: 1
+                    cantidad: 3
+                    periodo: 0
+        tortuga:
+            ancho: 50
+            alto: 35
+            sprites: images/tortuga2.png
+            animaciones:
+                -   nombre: quietoizq
+                    offset: 0
+                    cantidad: 1
+                    periodo: 1
+                -   nombre: izquierda
+                    offset: 0
+                    cantidad: 8
+                    periodo: 1       
+                -   nombre: caparazon
+                    offset: 9
+                    cantidad: 12
+                    periodo: 0 
+                -   nombre: quietoder
+                    offset: 32
+                    cantidad: 1
+                    periodo: 1
+                -   nombre: derecha
+                    offset: 32
+                    cantidad: 8
+                    periodo: 1                   
+                                  
+        barril:
+            ancho: 40
+            alto: 30
+            sprites: images/barrilesChicos.png
+            animaciones:
+                -   nombre: quietoder
+                    offset: 0
+                    cantidad: 4
+                    periodo: 1
+        pluma:
+            ancho: 40
+            alto: 60
+            sprites: images/pluma.png
+            animaciones:
+                -   nombre: quietoder
+                    offset: 0
+                    cantidad: 1
+                    periodo: 0
+        Armadura:
+            ancho: 30
+            alto: 30
+            sprites: images/Armadura.png
+            animaciones:
+                -   nombre: quietoder
+                    offset: 0
+                    cantidad: 1
+                    periodo: 0
+        VidaExtra:
+            ancho: 30
+            alto: 30
+            sprites: images/1UP.png
+            animaciones:
+                -   nombre: quietoder
+                    offset: 0
+                    cantidad: 1
+                    periodo: 0
+        bolaFuego:
+            ancho: 50
+            alto: 48
+            sprites: images/bolaFuegoPeq.png
+            animaciones:
+                -   nombre: quietoder
+                    offset: 0
+                    cantidad: 1
+                    periodo: 0
+    texturas:
+            -   textura: viga
+                file: images/metal.png
+            -   textura: hielo
+                file: images/hielo.png
+            -   textura: madera
+                file: images/madera.png
+            -   textura: canio
+                file: images/canio.png
+            -   textura: camaElastica
+                file: images/camaElastica.png
+            -   textura: Pow
+                file: images/Pow.png
+            -   textura: CajaBonus
+                file: images/CajaBonus.png
+            -   textura: corazon
+                file: images/heart.png
+            -   textura: iconoArmadura
+                file: images/iconoArmadura.png
+            -   textura: ganar
+                file : images/Ganar.png
+            -   textura: perder
+                file : images/Perder.png
+            -   textura: esperando
+                file : images/Waiting.png
+    nivel:
+        ancho: 1500
+        alto: 800
+        piso: 750
+        fondo: images/background.png
+        personajes:
+            -   tipo: princesa
+                x: 10
+                y: 700
+            -   tipo: mono
+                x: 360
+                y: 330
+#            -   tipo: fuego
+#                x: 1200
+#                y: 702
+        protagonistas:
+            -   tipo: mario
+                x: 105
+                y: 445
+                vel_personaje: 10
+                margen_scroll: 270
+                potencia_salto: 6
+            -   tipo: luigi
+                x: 400
+                y: 445
+                vel_personaje: 10
+                margen_scroll: 270
+                potencia_salto: 6
+            -   tipo: mono
+                x: 400
+                y: 450
+                vel_personaje: 12
+                margen_scroll: 270
+                potencia_salto: 7
+        vida:
+                tipo: vida
+                x: 0
+                y: 0
+        enemigos:
+            -   tipo: hongo
+                vel_enemigo: 15
+            -   tipo: tortuga
+                vel_enemigo: 12
+            -   tipo: barril
+                vel_enemigo: 15
+            -   tipo: Armadura
+                vel_enemigo: 15
+            -   tipo: VidaExtra
+                vel_enemigo: 15
+            -   tipo: pluma
+                vel_enemigo: 15
+            -   tipo: bolaFuego
+                vel_enemigo: 15
+        plataformas:
+            -   textura: viga
+                x: 450
+                y: 550
+                ancho: 200
+                alto: 25
+                rozamiento: 0
+            -   textura: viga
+                x: 0
+                y: 600
+                ancho: 50
+                alto: 25
+                rozamiento: 0
+            -   textura: viga
+                x: 0
+                y: 600
+                ancho: 50
+                alto: 25
+                rozamiento: 0
+            -   textura: viga
+                x: 750
+                y: 720
+                ancho: 20
+                alto: 50
+                rozamiento: 0
+            -   textura: viga
+                x: 100
+                y: 500
+                ancho: 50
+                alto: 25
+                rozamiento: 0
+            -   textura: hielo
+                x: 350
+                y: 400
+                ancho: 200
+                alto: 25
+                rozamiento: 0.9998
+        pow:
+            -   textura: Pow
+                x: 900
+                y: 500
+                ancho: 50
+                alto: 50
+                rozamiento: 0
+            -   textura: Pow
+                x: 500
+                y: 610
+                ancho: 50
+                alto: 50
+                rozamiento: 0
+        cajaBonus:
+            -   textura: CajaBonus
+                x: 1000
+                y: 500
+                ancho: 50
+                alto: 50
+                rozamiento: 0
+        plataformasInclinadas:
+            -   textura: viga
+                x: 550
+                y: 550
+                ancho: 250
+                alto: 50
+                rozamiento: 0
+                angulo: 30
+        escaleras:
+            -   textura: madera
+                x: 350
+                y: 550
+                ancho: 100
+                alto: 125
+        canierias:
+            -   textura: canio
+                x: 500
+                y: 480
+                ancho: 70
+                alto: 70
+        trampolines:
+            -   textura: camaElastica
+                x: 100
+                y: 700
+                ancho: 200
+                alto: 50
+        corazon:
+            -   textura: corazon
+                x: 30
+                y: 5
+                ancho: 30
+                alto: 30
+        iconoArmadura:
+            -   textura: iconoArmadura
+                x: 65
+                y: 5
+                ancho: 30
+                alto: 30
+        ganar:
+            -   textura: ganar
+                x: 150
+                y: 150
+                ancho: 500
+                alto: 300
+        perder:
+            -   textura: perder
+                x: 150
+                y: 150
+                ancho: 500
+                alto: 300
+        esperando:
+            -   textura: esperando
+                x: 150
+                y: 150
+                ancho: 500
+                alto: 200

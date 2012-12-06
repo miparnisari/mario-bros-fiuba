@@ -1,0 +1,50 @@
+menu:
+    fondo: 
+        imagen: images/tab.png
+        ancho: 640
+        alto: 480
+    tiposSolapa:
+        cliente:
+            botonSolapa: botonSolapaCliente
+            barraSeparadora: barraSeparadoraCliente
+        servidor:
+            botonSolapa: botonSolapaServidor
+            barraSeparadora: barraSeparadoraServidor
+        clienteEligePersonaje:
+            botonSolapa: botonSolapaCliente
+            barraSeparadora: barraSeparadoraCliente            
+    botonesSolapas:
+        botonSolapaCliente:
+            ancho: 130
+            alto: 20
+            x: 80
+            y: 5
+        botonSolapaServidor:
+            ancho: 125
+            alto: 20
+            x: 275
+            y: 20
+    barrasSeparadoras:
+        barraSeparadoraCliente:
+            ancho: 183
+            alto: 4
+            x: 246
+            y: 26
+            colorPintado:
+            colorDespintado:
+        barraSeparadoraServidor:
+            ancho: 183
+            alto: 4
+            x: 63
+            y: 26
+            colorPintado:
+            colorDespintado:
+    boton:
+        imagen: images/tab.png
+        ancho: 120
+        alto: 40
+        opciones:
+            -   nombre: unclicked
+                offset: 0
+            -   nombre: clicked
+                offset: 1

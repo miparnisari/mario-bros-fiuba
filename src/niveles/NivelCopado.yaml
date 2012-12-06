@@ -1,0 +1,531 @@
+juego:
+    pantalla:
+        ancho: 800
+        alto: 600
+    musica:
+        -   file: sounds/DBZ.mp3
+            tag: DBZ
+    sonidos:
+        -   file: sounds/Salto.wav
+            tag: Salto
+        -   file: sounds/Armadura.wav
+            tag: Armadura
+        -   file: sounds/Toasty.wav
+            tag: Toasty
+        -   file: sounds/Yah.wav
+            tag: Yah
+        -   file: sounds/Ganar.wav
+            tag: ganar
+        -   file: sounds/Perder.wav
+            tag: perder
+        -   file: sounds/1UP.wav
+            tag: 1UP
+        -   file: sounds/HereWeGo.wav
+            tag: HereWeGo
+        -   file: sounds/Cama.wav
+            tag: Cama
+    tiposPersonaje:
+        vida:
+            ancho: 24
+            alto: 48
+            sprites: images/numbers.png
+            animaciones: 
+                -   nombre: 0
+                    offset: 0
+                    cantidad: 1
+                    periodo: 0
+                -   nombre: 1
+                    offset: 1
+                    cantidad: 1
+                    periodo: 0
+                -   nombre: 2
+                    offset: 2
+                    cantidad: 1
+                    periodo: 0
+                -   nombre: 3
+                    offset: 3
+                    cantidad: 1
+                    periodo: 0
+                -   nombre: 4
+                    offset: 4
+                    cantidad: 1
+                    periodo: 0
+                -   nombre: 5
+                    offset: 5
+                    cantidad: 1
+                    periodo: 0
+                -   nombre: 6
+                    offset: 6
+                    cantidad: 1
+                    periodo: 0
+                -   nombre: 7
+                    offset: 7
+                    cantidad: 1
+                    periodo: 0
+                -   nombre: 8
+                    offset: 8
+                    cantidad: 1
+                    periodo: 0
+                -   nombre: 9
+                    offset: 9
+                    cantidad: 1
+                    periodo: 0
+        princesa:
+            ancho: 30
+            alto: 54
+            sprites: images/peach.png
+            animaciones: 
+                -   nombre: quietoder
+                    offset: 0
+                    cantidad: 1
+                    periodo: 6
+                -   nombre: atras
+                    offset: 1
+                    cantidad: 1
+                    periodo: 6
+                -   nombre: grito
+                    offset: 2
+                    cantidad: 4
+                    periodo: 10
+                -   nombre: izquierda
+                    offset: 6
+                    cantidad: 8
+                    periodo: 6
+                -   nombre: derecha
+                    offset: 14
+                    cantidad: 8
+                    periodo: 6
+        mono:
+            ancho: 70
+            alto: 70
+            sprites: images/mono2.png
+            animaciones:
+                -   nombre: quietoder
+                    offset: 0
+                    cantidad: 1
+                    periodo: 1
+                -   nombre: quietoizq
+                    offset: 1
+                    cantidad: 1
+                    periodo: 1
+                -   nombre: comer
+                    offset: 2
+                    cantidad: 2
+                    periodo: 1
+                -   nombre: baile
+                    offset: 4
+                    cantidad: 2
+                    periodo: 1
+                -   nombre: saltandoizq
+                    offset: 6
+                    cantidad: 3
+                    periodo: 1
+                -   nombre: saltandoder
+                    offset: 9
+                    cantidad: 3
+                    periodo: 1
+                -   nombre: cayendoizq
+                    offset: 11
+                    cantidad: 2
+                    periodo: 1
+                -   nombre: cayendoder
+                    offset: 13
+                    cantidad: 2
+                    periodo: 1
+    tiposProtagonista:
+        mario:
+            ancho: 40
+            alto: 43
+            sprites: images/mario_sprites.png
+            animaciones:
+                -   nombre: quietoder
+                    offset: 0
+                    cantidad: 1
+                    periodo: 0
+                -   nombre: quietoizq
+                    offset: 1
+                    cantidad: 1
+                    periodo: 0
+                -   nombre: derecha
+                    offset: 2
+                    cantidad: 4
+                    periodo: 0
+                -   nombre: izquierda
+                    offset: 6
+                    cantidad: 4
+                    periodo: 0
+                -   nombre: saltandoizq
+                    offset: 16
+                    cantidad: 1
+                    periodo: 4
+                -   nombre: saltandoder
+                    offset: 11
+                    cantidad: 1
+                    periodo: 4
+                -   nombre: cayendoizq
+                    offset: 19
+                    cantidad: 1
+                    periodo: 0
+                -   nombre: cayendoder
+                    offset: 14
+                    cantidad: 1
+                    periodo: 0
+        luigi:
+            ancho: 40
+            alto: 60
+            sprites: images/LuigiTGrande.png
+            animaciones:
+                -   nombre: quietoder
+                    offset: 0
+                    cantidad: 33
+                    periodo: 0
+                -   nombre: quietoizq
+                    offset: 32
+                    cantidad: 33
+                    periodo: 0
+                -   nombre: derecha
+                    offset: 65
+                    cantidad: 25
+                    periodo: 0
+                -   nombre: izquierda
+                    offset: 90
+                    cantidad: 25
+                    periodo: 0
+                -   nombre: saltandoizq
+                    offset: 141
+                    cantidad: 26
+                    periodo: 3
+                -   nombre: saltandoder
+                    offset: 115
+                    cantidad: 26
+                    periodo: 3
+                -   nombre: cayendoizq
+                    offset: 149
+                    cantidad: 18
+                    periodo: 3
+                -   nombre: cayendoder
+                    offset: 123
+                    cantidad: 18
+                    periodo: 3
+        hongo:
+            ancho: 30
+            alto: 30
+            sprites: images/hongo.png
+            animaciones:
+                -   nombre: quietoder
+                    offset: 2
+                    cantidad: 1
+                    periodo: 0
+                -   nombre: muriendo
+                    offset: 0
+                    cantidad: 1
+                    periodo: 0
+                -   nombre: mareado
+                    offset: 1
+                    cantidad: 3
+                    periodo: 0
+        tortuga:
+            ancho: 50
+            alto: 35
+            sprites: images/tortuga2.png
+            animaciones:
+                -   nombre: quietoizq
+                    offset: 0
+                    cantidad: 1
+                    periodo: 1
+                -   nombre: izquierda
+                    offset: 0
+                    cantidad: 8
+                    periodo: 1       
+                -   nombre: caparazon
+                    offset: 9
+                    cantidad: 12
+                    periodo: 0 
+                -   nombre: quietoder
+                    offset: 32
+                    cantidad: 1
+                    periodo: 1
+                -   nombre: derecha
+                    offset: 32
+                    cantidad: 8
+                    periodo: 1  
+        barril:
+            ancho: 40
+            alto: 30
+            sprites: images/barrilesChicos.png
+            animaciones:
+                -   nombre: quietoder
+                    offset: 0
+                    cantidad: 4
+                    periodo: 1
+        pluma:
+            ancho: 40
+            alto: 60
+            sprites: images/pluma.png
+            animaciones:
+                -   nombre: quietoder
+                    offset: 0
+                    cantidad: 1
+                    periodo: 0
+        Armadura:
+            ancho: 30
+            alto: 30
+            sprites: images/Armadura.png
+            animaciones:
+                -   nombre: quietoder
+                    offset: 0
+                    cantidad: 1
+                    periodo: 0
+        VidaExtra:
+            ancho: 50
+            alto: 50
+            sprites: images/Est.png
+            animaciones:
+                -   nombre: quietoder
+                    offset: 0
+                    cantidad: 1
+                    periodo: 0
+        bolaFuego:
+            ancho: 50
+            alto: 48
+            sprites: images/bolaFuegoPeq.png
+            animaciones:
+                -   nombre: quietoder
+                    offset: 0
+                    cantidad: 1
+                    periodo: 0
+    texturas:
+            -   textura: hielo
+                file: images/hielo.png
+            -   textura: viga
+                file: images/metal.png
+            -   textura: madera
+                file: images/madera.png
+            -   textura: ladrillo
+                file: images/ladrillos.jpg
+            -   textura: canio
+                file: images/canio.png
+            -   textura: camaElastica
+                file: images/camaElastica.png
+            -   textura: Pow
+                file: images/Pow.png
+            -   textura: corazon
+                file: images/heart.png
+            -   textura: iconoArmadura
+                file: images/iconoArmadura.png
+            -   textura: ganar
+                file : images/Ganar.png
+            -   textura: perder
+                file : images/Perder.png
+            -   textura: esperando
+                file : images/Waiting.png
+    nivel:
+        ancho: 800
+        alto: 1500
+        piso: 1449
+        fondo: images/fondo_nubes.png
+        vida:
+                tipo: vida
+                x: 0
+                y: 0
+        personajes:
+            -   tipo: princesa
+                x: 700
+                y: 550
+            -   tipo: mono
+                x: 100
+                y: 540
+        protagonistas:
+            -   tipo: mario
+                x: 175
+                y: 1250
+                vel_personaje: 7
+                margen_scroll: 270
+                potencia_salto: 6
+            -   tipo: luigi
+                x: 175
+                y: 1250
+                vel_personaje: 7
+                margen_scroll: 270
+                potencia_salto: 6    
+        enemigos:
+            -   tipo: hongo
+                vel_enemigo: 15
+            -   tipo: tortuga
+                vel_enemigo: 12
+            -   tipo: barril
+                vel_enemigo: 15
+            -   tipo: Armadura
+                vel_enemigo: 15
+            -   tipo: VidaExtra
+                vel_enemigo: 15
+            -   tipo: pluma
+                vel_enemigo: 15
+            -   tipo: bolaFuego
+                vel_enemigo: 15
+        plataformas:
+            # el piso de la princesa
+            -   textura: ladrillo
+                x: 700
+                y: 600
+                ancho: 100
+                alto: 30
+                rozamiento: 0
+            # el piso del mono
+            -   textura: ladrillo
+                x: 0
+                y: 600
+                ancho: 200
+                alto: 30
+                rozamiento: 0
+            # el piso de hielo
+            -   textura: hielo
+                x: 250
+                y: 860
+                ancho: 310
+                alto: 30
+                rozamiento: 0.999999
+            # el piso
+            -   textura: viga
+                x: 0
+                y: 1450
+                ancho: 800
+                alto: 50
+                rozamiento: 0
+            # la de la izquierda del 3er piso
+            -   textura: ladrillo
+                x: 70
+                y: 1040
+                ancho: 250
+                alto: 25
+                rozamiento: 0
+            # la de la derecha del 3er piso
+            -   textura: ladrillo
+                x: 450
+                y: 1040
+                ancho: 250
+                alto: 25
+                rozamiento: 0
+        plataformasInclinadas:
+            # la de abajo
+            -   textura: ladrillo
+                x: 70
+                y: 1330
+                ancho: 650
+                alto: 25
+                rozamiento: 0
+                angulo: 2
+            # la 2da desde abajo
+            -   textura: ladrillo
+                x: 150
+                y: 1200
+                ancho: 540
+                alto: 25
+                rozamiento: 0
+                angulo: 10
+            # la que da a la princesa
+            -   textura: ladrillo
+                x: 450
+                y: 650
+                ancho: 280
+                alto: 25
+                rozamiento: 0
+                angulo: 10
+        escaleras:
+                #la de abajo a la izquierda
+            #~ -   textura: madera
+                #~ x: 100
+                #~ y: 830
+                #~ ancho: 60
+                #~ alto: 120
+                #~ # la de abajo a la derecha
+            #~ -   textura: madera
+                #~ x: 620
+                #~ y: 810
+                #~ ancho: 70
+                #~ alto: 140
+                #~ # la del 2do piso
+            #~ -   textura: madera
+                #~ x: 320
+                #~ y: 675
+                #~ ancho: 70
+                #~ alto: 147
+                #~ # la que da al monito (izquierda)
+            #~ -   textura: madera
+                #~ x: 280
+                #~ y: 360
+                #~ ancho: 60
+                #~ alto: 180
+                # la que da al monito (derecha)
+            #~ -   textura: madera
+                #~ x: 480
+                #~ y: 360
+                #~ ancho: 60
+                #~ alto: 180
+        canierias:
+               # la del piso
+            -   textura: canio
+                x: 385
+                y: 1421
+                ancho: 30
+                alto: 30
+               # la de al lado de la princesa
+            -   textura: canio
+                x: 770
+                y: 570
+                ancho: 30
+                alto: 30
+            -   textura: canio
+                x: 170
+                y: 1010
+                ancho: 30
+                alto: 30
+            -   textura: canio
+                x: 600
+                y: 1010
+                ancho: 30
+                alto: 30
+        trampolines:
+            -   textura: camaElastica
+                x: 350
+                y: 845
+                ancho: 100
+                alto: 25
+                rozamiento: 5
+        pow:
+            -   textura: Pow
+                x: 100
+                y: 900
+                ancho: 50
+                alto: 50
+                rozamiento: 0
+        corazon:
+            -   textura: corazon
+                x: 30
+                y: 5
+                ancho: 30
+                alto: 30
+        iconoArmadura:
+            -   textura: iconoArmadura
+                x: 65
+                y: 5
+                ancho: 30
+                alto: 30
+        ganar:
+            -   textura: ganar
+                x: 150
+                y: 150
+                ancho: 500
+                alto: 300
+        perder:
+            -   textura: perder
+                x: 150
+                y: 150
+                ancho: 500
+                alto: 300
+        esperando:
+            -   textura: esperando
+                x: 150
+                y: 150
+                ancho: 500
+                alto: 200

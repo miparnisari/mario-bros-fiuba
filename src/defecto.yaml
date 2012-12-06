@@ -1,0 +1,76 @@
+juego:
+    pantalla:
+        ancho: 800
+        alto: 600
+    musica:
+        file: sounds/GOT.mp3
+        tag: GOT
+    parametros:
+        vel_personaje: 15
+        margen_scroll: 20
+    tiposPersonaje:
+        protagonista:
+            ancho: 66
+            alto: 150
+            sprites: images/guybrushHQtira.png
+            animaciones:
+                -   nombre: quieto
+                    offset: 0
+                    cantidad: 1
+                    periodo: 0
+                -   nombre: caminar
+                    offset: 1
+                    cantidad: 12
+                    periodo: 0
+        error:
+            ancho: 128
+            alto: 128
+            sprites: images/errorAnimation.png
+            animaciones:
+                -   nombre: anim1
+                    offset: 0
+                    cantidad: 1
+                    periodo: 3
+                -   nombre: anim2
+                    offset: 1
+                    cantidad: 1
+                    periodo: 3
+                -   nombre: anim3
+                    offset: 2
+                    cantidad: 1
+                    periodo: 3
+                -   nombre: anim4
+                    offset: 3
+                    cantidad: 1
+                    periodo: 3   
+    texturas:
+        -   textura: texturaError
+            file: images/error.png   
+    nivel:
+        alto: 800
+        ancho: 4096
+        fondo: images/background.png
+        personajes:
+            -   tipo: protagonista
+                x: 300
+                y: 600
+            -   tipo: error
+                x: 300
+                y: 400
+        plataformas:
+            -   textura: texturaError
+                x: 100
+                y: 100
+                ancho: 100
+                alto: 20
+            -   textura: texturaError
+                x: 200
+                y: 200
+                ancho: 200
+                alto: 20
+        escaleras:
+            -   textura: texturaError
+                x: 200
+                y: 300
+                ancho: 20
+                alto: 100

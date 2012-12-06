@@ -1,0 +1,6 @@
+cliente:
+    direccion: localhost
+    puerto: 10000
+servidor:
+    puerto: 10000
+    cantidadClientes: 1
